@@ -1,5 +1,5 @@
 // Importar Firebase desde la CDN
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
 import {
 getFirestore,
 collection,
@@ -9,7 +9,7 @@ getDocs,
 doc,
 updateDoc,
 deleteDoc
-} from "https://www.gstatic.com/firebasejs/11.0.0/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
 
 //--------- Configuración de Firebase ------------
 
@@ -22,6 +22,7 @@ const firebaseConfig = {
   appId: "1:1049566034316:web:524a79e0d5ccb93a473ea9",
   measurementId: "G-9MBSECVP69"
 };
+
 // Inicializar Firebase y Firestore
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
